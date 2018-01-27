@@ -25,7 +25,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
 
 ![](memorySize.png)
 
-![](createVirtualHardDisk.png=250)
+![](createVirtualHardDisk.png)
 
 ## Second logical group of Page <a id="id-link-to-section"></a>
 
