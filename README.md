@@ -13,11 +13,11 @@ _________________________
 5. [Troubleshooting (optional)](#id-link-to-section)
 
 ## Prerequisites <a id="id-link-to-section"></a>
-1. Have your [virtual environment](link-to-guide) configured
+1. Have your [virtual environment](https://www.virtualbox.org/wiki/Downloads) configured
 2. Have the [ISP](link-to-guide) gateway running.
 
 ## Summary <a id="id-link-to-section"></a>
-Description on subject. Context of the Network Location/OS/Service/Other. Any other things that might be helpful.
+PFsense is an open source firewall that is based on the FreeBSD operating system. Here we will learn how to install and setup PFsense in a virtualization software, in this case, VirtualBox.
 
 ## First logical group of Page <a id="id-link-to-section"></a>
 
