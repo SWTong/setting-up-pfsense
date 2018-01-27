@@ -8,7 +8,7 @@ _________________________
 ### Table of Contents
 1. [Prerequisites](#id-link-to-section)
 2. [Summary](#id-link-to-section)
-3. [First logical group of Page](#id-link-to-section)
+3. [Installing PFsense](#id-link-to-section)
 4. [Second logical group of Page](#id-link-to-section)
 5. [Troubleshooting (optional)](#id-link-to-section)
 
@@ -19,7 +19,13 @@ _________________________
 ## Summary <a id="id-link-to-section"></a>
 PFsense is an open source firewall that is based on the FreeBSD operating system. Here we will learn how to install and setup PFsense in a virtualization software, in this case, VirtualBox.
 
-## First logical group of Page <a id="id-link-to-section"></a>
+## Installing PFsense <a id="id-link-to-section"></a>
+
+![](createVM.png)
+
+![](memorySize.png)
+
+![](createVirtualHardDisk.png)
 
 ## Second logical group of Page <a id="id-link-to-section"></a>
 
