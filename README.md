@@ -21,11 +21,11 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
 
 ## Installing PFsense <a id="id-link-to-section"></a>
 
-![](createVM.png)
+![](createVM.png=250x250)
 
-![](memorySize.png)
+![](memorySize.png=250x250)
 
-![](createVirtualHardDisk.png)
+![](createVirtualHardDisk.png=250x250)
 
 ## Second logical group of Page <a id="id-link-to-section"></a>
 
