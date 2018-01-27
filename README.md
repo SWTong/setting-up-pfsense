@@ -20,8 +20,23 @@ _________________________
 PFsense is an open source firewall that is based on the FreeBSD operating system. Here we will learn how to install and setup PFsense in a virtualization software, in this case, VirtualBox.
 
 ## Installing PFsense <a id="id-link-to-section"></a>
+1. Go to the PFsense download page [here] (https://www.pfsense.org/download/)
+
+2. Select the latest version (in this case, version 2.4.2)
+
+3. Select the architecture based on your CPU.
+   If you have a 64-bit capable CPU, use the amd64 version. 
+   If you have a 32-bit capable CPU, use the i386 version.
+
+4. Select a mirror based on your location.
+
+5. Click 'Download.'
+
+6. After it finishes downloading, open VirtualBox and click on 'New' on the upper left-hand corner. Type 'PFsense' in the 'Name' box,
+   select BSD from the 'Type' dropdown menu, and select 'FreeBSD (64-bit)' or 'FreeBSD (32-bit) based on your CPU. Then click 'Next.'
 
 ![](createVM.png)
+
 
 ![](memorySize.png)
 
