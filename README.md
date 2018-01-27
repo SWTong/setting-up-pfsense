@@ -1,14 +1,11 @@
----
-layout: post
-title: Setting Up PFsense
-author: Sharon Tong
----
+## Written by Sharon Tong
+_________________________
 
 ### Contact
 - Slack: @Sharon on wcscusf.slack.com
 - LinkedIn: linkedin.com/in/sharon-tong
 - Email: sharont1@mail.usf.edu
-### Table
+### Table of Contents
 1. [Prerequisites](#id-link-to-section)
 2. [Summary](#id-link-to-section)
 3. [First logical group of Page](#id-link-to-section)
@@ -22,8 +19,11 @@ author: Sharon Tong
 ## Summary <a id="id-link-to-section"></a>
 Description on subject. Context of the Network Location/OS/Service/Other. Any other things that might be helpful.
 
+## First logical group of Page <a id="id-link-to-section"></a>
+
+## Second logical group of Page <a id="id-link-to-section"></a>
+
+## Troubleshooting (optional) <a id="id-link-to-section"></a>
+
 ##### Supporting detail (optional/ title name can change also)
 group together logical ideas for the summary if needed
-
-
-[Homepage](../../)
