@@ -53,8 +53,11 @@ Now that we have the ISO file, we can finish up the installation process.
 
    Go to the location where you extracted the contents of the PFsense gz file to and select the PFsense ISO image file.
 
-![](chooseISO.png)
+![](isoFileSuccess.png)
 
+Congrats! You finished installing PFsense into VirtualBox! Next, we will cover configuration.
+
+![](installSuccess.png) 
 
 ## Configuring PFsense <a id="id-link-to-section"></a>
 
