@@ -14,13 +14,13 @@ _________________________
 
 ## Prerequisites <a id="id-link-to-section"></a>
 1. Have your [virtual environment](https://www.virtualbox.org/wiki/Downloads) configured
-2. Have [WinRAR] (https://www.win-rar.com/start.html?&L=0) installed on your computer.
+2. Have [WinRAR](https://www.win-rar.com/start.html?&L=0) installed on your computer.
 
 ## Summary <a id="id-link-to-section"></a>
 PFsense is an open source firewall that is based on the FreeBSD operating system. Here we will learn how to install and setup PFsense in a virtualization software, in this case, VirtualBox.
 
 ## Installing PFsense <a id="id-link-to-section"></a>
-1. Go to the PFsense download page [here] (https://www.pfsense.org/download/)
+1. Go to the PFsense download page [here](https://www.pfsense.org/download/)
 
 2. Select the latest version of PFsense and the architecture you want based on the kind of CPU you have.
    If you have a 64-bit capable CPU, use the amd64 version (this works for Intel CPUs too). 
@@ -39,18 +39,21 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
 
 ![](createVirtualHardDisk.png)
 
-6. Because the PFsense file we downloaded earlier is in the gz file format and VirtualBox does not support gz files, we will need an application that will be able to extract content (the ISO file in our case, which VirtualBox does support) from gz files. In this guide, we will be using WinRAR. Open the PFsense.iso.gz file in WinRAR and then select 'Extract To' at the top of the WinRAR screen. I chose to extract the contents to my 'Downloads' folder. You can choose whichever folder you want.
+6. Because the PFsense file we downloaded earlier is in the gz file format and VirtualBox does not support gz files, we will need an        application that will be able to extract content (the ISO file in our case, which VirtualBox does support) from gz files. In this        guide, we will be using WinRAR. Open the PFsense.iso.gz file in WinRAR and then select 'Extract To' at the top of the WinRAR screen.    I chose to extract the contents to my 'Downloads' folder. You can choose whichever folder you want.
 
 ![](extractISO.png)
 
-We now have the ISO file! Now we can finish up the installation process.
+Now that we have the ISO file, we can finish up the installation process.
 
-![](isoFileSuccess.png)
+8. Go back to VirtualBox. We will now place the PFsense ISO image file into VirtualBox so that our PFsense virtual machine will            recognize it and run PFsense.
 
-8. Go back to VirtualBox. We will now place the PFsense ISO image file into VirtualBox so that our PFsense virtual machine will recognize it and run PFsense.
-Go to 'Settings' on the upper left-hand corner of the VirtualBox screen. Then click on the 'Storage' tab. Click on 'Empty' under the  'Controller: IDE' section. 
+   Go to 'Settings' on the upper left-hand corner of the VirtualBox screen. Then click on the 'Storage' tab. Click on 'Empty' under the    'Controller: IDE' section. Then click on the disc image and select 'Choose Virtual Optical Disk File...'
 
 ![](storingFile.png)
+
+   Go to the location where you extracted the contents of the PFsense gz file to and select the PFsense ISO image file.
+
+![](chooseISO.png)
 
 
 ## Configuring PFsense <a id="id-link-to-section"></a>
