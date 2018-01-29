@@ -31,7 +31,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    If you have a 64-bit capable CPU, use the amd64 version (this works for Intel CPUs too). 
    If you have a 32-bit capable CPU, use the i386 version.
 
-3  After it finishes downloading, open VirtualBox and click on `New` on the upper left-hand corner. Type `PFsense` into the `Name` box,
+3. After it finishes downloading, open VirtualBox and click on `New` on the upper left-hand corner. Type `PFsense` into the `Name` box,
    select `BSD` from the `Type` dropdown menu, and select `FreeBSD (64-bit)` or `FreeBSD (32-bit)` based on your CPU. Then click `Next`.
 
    ![](createVM.png)
@@ -46,7 +46,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
 
 6. Because the PFsense file we downloaded earlier is in the gz file format and VirtualBox does not support gz files, we will need an        application that will be able to extract content (the ISO image file in our case, which VirtualBox does support) from gz files. In      this guide, we will be using WinRAR. 
 
-   Open the PFsense.iso.gz file in WinRAR and then select `Extract To` at the top of the WinRAR screen. I chose to extract the              contents to my `Downloads` folder. You can choose whichever folder you want.
+   Open the PFsense.iso.gz file in WinRAR and then select `Extract To` at the top of the WinRAR screen. I chose to extract the contents to my `Downloads` folder. You can choose whichever folder you want.
 
    ![](extractISO.png)
 
@@ -54,7 +54,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
 
 8. Go back to VirtualBox. We will now place the PFsense ISO image file into VirtualBox so that our PFsense virtual machine will            recognize it and run PFsense.
 
-   Go to `Settings` on the upper left-hand corner of the VirtualBox screen. Then click on the `Storage` tab. Click on `Empty` under the    `Controller: IDE` section. Then click on the disc image and select `Choose Virtual Optical Disk File...`
+9. Go to `Settings` on the upper left-hand corner of the VirtualBox screen. Then click on the `Storage` tab. Click on `Empty` under the    `Controller: IDE` section. Then click on the disc image and select `Choose Virtual Optical Disk File...`
 
    ![](storingFile.png)
 
