@@ -24,7 +24,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
 
 2. Select the latest version of PFsense and the architecture you want based on the kind of CPU you have.
 
-   To find out what kind of CPU you have, on Windows, go to the Start menu and type in `cpu.` A result should appear that tells            information about the processor. Select that and it will you to a screen with the CPU information.
+   To find out what kind of CPU you have, on Windows, go to the Start menu and type in `cpu`. A result should appear that tells            information about the processor. Select that and it will you to a screen with the CPU information.
  
 ![](deviceSpecs.png)
 
@@ -32,7 +32,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    If you have a 32-bit capable CPU, use the i386 version.
 
 3. After it finishes downloading, open VirtualBox and click on `New` on the upper left-hand corner. Type `PFsense` into the `Name` box,
-   select BSD from the `Type` dropdown menu, and select `FreeBSD (64-bit)` or `FreeBSD (32-bit)` based on your CPU. Then click `Next.`
+   select `BSD` from the `Type` dropdown menu, and select `FreeBSD (64-bit)` or `FreeBSD (32-bit)` based on your CPU. Then click `Next.`
 
 ![](createVM.png)
 
