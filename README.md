@@ -24,9 +24,9 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
 
 2. Select the latest version of PFsense and the architecture you want based on the kind of CPU you have.
    
-   To find out what kind of CPU you have, on Windows, go to the Start menu and type in `cpu`. A result should appear that tells            information about the processor. Select that and it will you to a screen with the CPU information.
+   To find out what kind of CPU you have, on Windows, go to the Start menu and type in `cpu`. A result should appear that tells            information about the processor. Select that and it will direct you to a screen with the CPU information.
  
-   ![](deviceSpecs.png)
+   ![](deviceSpecs2.png)
 
    If you have a 64-bit capable CPU, use the amd64 version (this works for Intel CPUs too). 
    If you have a 32-bit capable CPU, use the i386 version.
