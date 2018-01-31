@@ -15,6 +15,7 @@ _________________________
 ## Prerequisites <a id="id-link-to-section"></a>
 1. Have your [virtual environment](https://www.virtualbox.org/wiki/Downloads) configured.
 2. Have [WinRAR](https://www.win-rar.com/start.html?&L=0) installed on your computer.
+3. Have your ISP gateway running (we'll be using [Ubuntu ISP](https://silexone.github.io/guides/nestor/ISPsetup.html) here).
 
 ## Summary <a id="id-link-to-section"></a>
 PFsense is an open source firewall that is based on the FreeBSD operating system. Here, we will learn how to install and setup PFsense in a virtualization software, in this case, VirtualBox.
@@ -49,12 +50,12 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    Open the PFsense.iso.gz file in WinRAR and then select `Extract To` at the top of the WinRAR screen. I chose to extract the contents to my `Downloads` folder. You can choose whichever folder you want.
 
    ![](extractISO.png)
+   
+7. Now that we have the ISO image file, we can continue.
 
-   Now that we have the ISO image file, we can finish up the installation process.
+   Go back to VirtualBox. We will now place the PFsense ISO image file into VirtualBox so that our PFsense virtual machine will            recognize it and run PFsense.
 
-8. Go back to VirtualBox. We will now place the PFsense ISO image file into VirtualBox so that our PFsense virtual machine will            recognize it and run PFsense.
-
-9. Go to `Settings` on the upper left-hand corner of the VirtualBox screen. Then click on the `Storage` tab. Click on `Empty` under the    `Controller: IDE` section. Then click on the disc image and select `Choose Virtual Optical Disk File...`
+   Go to `Settings` on the upper left-hand corner of the VirtualBox screen. Then click on the `Storage` tab. Click on `Empty` under the    `Controller: IDE` section. Then click on the disc image and select `Choose Virtual Optical Disk File...`
 
    ![](storingFile.png)
 
@@ -67,6 +68,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    ![](installSuccess.png) 
 
 ## Configuring PFsense <a id="id-link-to-section"></a>
+
 
 ## Troubleshooting <a id="id-link-to-section"></a>
 
