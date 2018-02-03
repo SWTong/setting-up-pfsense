@@ -69,6 +69,21 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
 
 ## Configuring PFsense <a id="id-link-to-section"></a>
 
+1. Associate the network adapters you [created from VirtualBox](https://github.com/Nanjuan/WCSC-Blue-                Team/blob/master/Network%20Adapter%20Information.md) to PFsense.
+
+   Go to PFsense `Settings` and select the `Network` tab.  For Adapter 1, from the `Attached to` dropdown menu, it to `Host-only adapter` and associate it with the LAN. Remember, if you are using VirtualBox in Windows, we are associating it with Network Card/Adapter 2. On Mac, we are associating it with Network Card/Adapter 0.
+
+   ![](associateAdapter1.png)
+
+   For Adapter 2, from the `Attached to` dropdown menu, select `Host-only adapter` and associate it with the DMZ. In Windows VirtualBox, it is Network Card/Adapter 3. On Mac, it is Network Card/Adapter 1.
+   
+   ![](associateAdapter2.png)
+   
+   For Adapter 3, from the `Attached to` dropdown menu, select `Bridged Adapter`. Choose the default item listed in the `Name` dropdown menu.
+   
+   ![](associateAdapter3.png)
+   
+2. Now boot up PFsense by double-clicking on it from your VirtualBox homepage.
 
 ## Troubleshooting <a id="id-link-to-section"></a>
 
