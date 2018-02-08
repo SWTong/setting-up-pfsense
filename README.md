@@ -6,21 +6,21 @@ _________________________
 - LinkedIn: linkedin.com/in/sharon-tong
 - Email: sharont1@mail.usf.edu
 ### Table of Contents
-1. [Prerequisites](#id-link-to-section)
-2. [Summary](#id-link-to-section)
-3. [Installing PFsense](#id-link-to-section)
-4. [Configuring PFsense](#id-link-to-section)
-5. [Troubleshooting](#id-link-to-section)
+1. [Prerequisites](#prereq)
+2. [Summary](#summary)
+3. [Installing PFsense](#installation)
+4. [Configuring PFsense](#configuration)
+5. [Troubleshooting](#troubleshooting)
 
-## Prerequisites <a id="id-link-to-section"></a>
+## Prerequisites <a id="prereq"></a>
 1. Have your [virtual environment](https://www.virtualbox.org/wiki/Downloads) configured.
 2. Have [WinRAR](https://www.win-rar.com/start.html?&L=0) installed on your computer.
 3. Have your ISP gateway running (we'll be using [Ubuntu ISP](https://silexone.github.io/guides/nestor/ISPsetup.html) here).
 
-## Summary <a id="id-link-to-section"></a>
+## Summary <a id="summary"></a>
 PFsense is an open source firewall that is based on the FreeBSD operating system. Here, we will learn how to install and setup PFsense in a virtualization software, in this case, VirtualBox.
 
-## Installing PFsense <a id="id-link-to-section"></a>
+## Installing PFsense <a id="installation"></a>
 1. Go to the PFsense download page [here](https://www.pfsense.org/download/).
 
 2. Select the latest version of PFsense and the architecture you want based on the kind of CPU you have.
@@ -67,7 +67,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
 
    ![](installSuccess.png) 
 
-## Configuring PFsense <a id="id-link-to-section"></a>
+## Configuring PFsense <a id="configuration"></a>
 
 1. Associate the network adapters you [created from VirtualBox](https://github.com/Nanjuan/WCSC-Blue-                Team/blob/master/Network%20Adapter%20Information.md) to PFsense.
 
@@ -85,7 +85,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    
 2. Now boot up PFsense by double-clicking on it from your VirtualBox homepage.
 
-## Troubleshooting <a id="id-link-to-section"></a>
+## Troubleshooting <a id="troubleshooting"></a>
 
 ##### Supporting detail (optional/ title name can change also)
 group together logical ideas for the summary if needed
