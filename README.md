@@ -113,7 +113,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    
    To do that, while PFsense is still running, click on the `Devices` tab at the top of the VirtualBox ribbon. Then select `Optical Drives` and `Remove disk from virtual drive`.
    
-   ![](devicesTab.png)
+   ![](devicesTab.PNG)
    
    Now that the PFsense installer is out we can go back to VirtualBox and click on our PFsense VM. You will find that you are out of the loop now. Keep note that your default login username is `admin` and your password is `pfsense`.
    
