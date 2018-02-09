@@ -109,7 +109,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
 
    ![](reboot.png)
    
-   3. Take out the PFsense ISO image from the optical disk to avoid going through a loop.
+3. Take out the PFsense ISO image from the optical disk to avoid going through a loop.
    
    After PFsense finishes rebooting, you will be directed to the disclaimer page that you saw after starting up PFsense for the first time. The screens that follow will be the exact same and you'll end up in a loop. The reason for this is because this is the PFsense installer. We have finished installing PFsense and configured the installation from the defaults we selected. PFsense needs to start from the hard disk now. 
    
