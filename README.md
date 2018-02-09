@@ -123,7 +123,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    
   A list of network interfaces will be shown: em0, em1, em2, and em3. These refer to the network adapters listed on the PFsense `Network` tab: Adapter 1, Adapter 2, and Adapter 3.
   
-  ![](LANEm0.png)
+  ![](lanEm0.png)
    
    When the screen asks, `Do VLANs need to be set up first?`, that is referring to setting up the virtual LAN. We have already done that in previous steps, so type `n` for 'no' and hit `Enter`.
    
@@ -137,7 +137,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    
    Check the image below to be sure you have the following commands typed.
    
-   ![](enterInterfaces.png)
+   ![](enterInterfaces.PNG)
 
    
 ## Troubleshooting <a id="troubleshooting"></a>
