@@ -3,7 +3,7 @@ _________________________
 
 ### Contact
 - Slack: @Sharon on wcscusf.slack.com
-- LinkedIn: linkedin.com/in/sharon-tong
+- [LinkedIn](linkedin.com/in/sharon-tong)
 - Email: sharont1@mail.usf.edu
 ### Table of Contents
 1. [Prerequisites](#prereq)
@@ -85,6 +85,29 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    
 2. Now boot up PFsense by double-clicking on it from your VirtualBox homepage.
 
+   You will be directed to a disclaimer page after PFsense autoboots. Hit `Enter` to accept.
+
+   ![](accept.png)
+   
+   You will be sent to the installer page. The default selection is `install pfSense`. Hit `Enter` to move forward.
+
+   ![](install.png)
+   
+   Next step is to select filesystem. By default UFS is selected. This option automatically configures the hard drive. Hit `Enter` to continue. 
+   
+   ![](partitioning.png)
+   
+   Now you are on the keymap page. The default is US standard keyboard map. Hit `Enter` to continue.
+   
+   ![](keymap.png)
+   
+   Select `No` on the next screen when it asks you if you want to open the shell to make anymore manual configurations with the installation.
+   
+   ![](openShellOption.png)
+   
+   
+   
+   
 ## Troubleshooting <a id="troubleshooting"></a>
 
 ##### Supporting detail (optional/ title name can change also)
