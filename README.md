@@ -97,14 +97,29 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    
    ![](partitioning.png)
    
-   Now you are on the keymap page. The default is US standard keyboard map. Hit `Enter` to continue.
+   Now you are on the keymap screen. The default is US standard keyboard map. Hit `Enter` to continue.
    
    ![](keymap.png)
    
-   Select `No` on the next screen when it asks you if you want to open the shell to make anymore manual configurations with the installation.
+   Select `No` on the next screen when it asks you if you want to open the shell to make anymore manual configurations with the installation. Hit `Enter`.
    
    ![](openShellOption.png)
    
+   Select `Reboot` on the next screen and then hit `Enter`.
+
+   ![](reboot.png)
+   
+   After PFsense finishes rebooting, you will be directed to the disclaimer page that you saw after starting up PFsense for the first time. The screens that follow will be the exact same and you'll end up in a loop. The reason for this is because this is the PFsense installer. We have finished installing PFsense and configured the installation from the defaults we selected. PFsense needs to start from the hard disk now. 
+   
+   To do that, while PFsense is still running, click on the `Devices` tab at the top of the VirtualBox ribbon. Then select `Optical Drives` and `Remove disk from virtual drive`.
+   
+   ![](devicesTab.png)
+   
+   Now that the PFsense installer is out we can go back to VirtualBox and click on our PFsense VM. You will find that you are out of the loop now. Keep note that your default login username is `admin` and your password is `pfsense`.
+   
+   On the welcome screen, you will see a list of options available. Type in `1` to choose `option 1` to assign the network interfaces we created earlier into PFsense.
+   
+   ![](option1.png)
    
    
    
