@@ -71,15 +71,15 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
 
 1. Associate the network adapters you [created from VirtualBox](https://goo.gl/vs4cHC) to PFsense.
 
-   Go to PFsense `Settings` and select the `Network` tab.  For Adapter 1, from the `Attached to` dropdown menu, it to `Host-only adapter` and associate it with the LAN. Remember, if you are using VirtualBox in Windows, we are associating it with Network Card/Adapter 2. On Mac, we are associating it with Network Card/Adapter 0.
+   Go to PFsense `Settings` and select the `Network` tab.  For Adapter 1 tab, from the `Attached to` dropdown menu, set it to `Host-only adapter` and associate it with the LAN. Remember, if you are using VirtualBox in Windows, we are associating it with Network Card/Adapter 2. On Mac, we are associating it with Network Card/Adapter 0.
 
    ![](associateAdapter1.png)
 
-   For Adapter 2, from the `Attached to` dropdown menu, select `Host-only adapter` and associate it with the DMZ. In Windows VirtualBox, it is Network Card/Adapter 3. On Mac, it is Network Card/Adapter 1.
+   For Adapter 2 tab, from the `Attached to` dropdown menu, select `Host-only adapter` and associate it with the DMZ. In Windows VirtualBox, it is Network Card/Adapter 3. On Mac, it is Network Card/Adapter 1.
    
    ![](associateAdapter2.png)
    
-   For Adapter 3, from the `Attached to` dropdown menu, select `Bridged Adapter`. Choose the default item listed in the `Name` dropdown menu.
+   For Adapter 3 tab, from the `Attached to` dropdown menu, select `Host-only adapter` and associate it with the WAN. In Windows VirtualBox, it is Network Card/Adapter 4. On Mac it is Netword Card/Adapter 2.
    
    ![](associateAdapter3.png)
    
@@ -89,7 +89,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
 
    ![](accept.png)
    
-   You will be sent to the installer page. The default selection is `install pfSense`. Hit `Enter` to move forward.
+   You will be directed to the installer page. The default selection is `install pfSense`. Hit `Enter` to move forward.
 
    ![](install.png)
    
@@ -121,7 +121,24 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    
    ![](option1.png)
    
+  A list of network interfaces will be shown: em0, em1, em2, and em3. These refer to the network adapters listed on the PFsense `Network` tab: Adapter 1, Adapter 2, and Adapter 3.
+  
+  ![](LANEm0.png)
    
+   When the screen asks, `Do VLANs need to be set up first?`, that is referring to setting up the virtual LAN. We have already done that in previous steps, so type `n` for 'no' and hit `Enter`.
+   
+   The first interface PFsense asks you to assign is the WAN. In previous steps we associated the WAN with Network Card/Adapter 4 (2 on Mac) under the PFsense Adapter 3 tab in VirtualBox. This tab basically refers to em2, so type `em2` and hit `Enter` to answer the question.
+      
+   The second interface PFsense asks you to assign is the LAN. In previous steps we associated the LAN with Network Card/Adapter 2  (0 on Mac) under the PFsense Adapter 1 tab in VirtualBox. This tab basically refers to em0, so type `em0` and hit `Enter` to answer the question.
+   
+   The third interface PFsense asks you to assign is an optional interface. Here, we have the DMZ that we setup earlier. We associated the DMZ with Netword Card/Adapter 2 (1 on Mac) under the PFsense Adapter 2 tab in VirtualBox. This tab basically refers to em1, so type `em1` and hit `Enter` to answer the question.
+   
+   The fourth interface PFsense asks you to assign is another optional interface. We don't have another on here, so just hit `Enter` to move on.
+   
+   Check the image below to be sure you have the following commands typed.
+   
+   ![](enterInterfaces.png)
+
    
 ## Troubleshooting <a id="troubleshooting"></a>
 
