@@ -109,6 +109,8 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
 
    ![](reboot.png)
    
+   3. Take out the PFsense ISO image from the optical disk to avoid going through a loop.
+   
    After PFsense finishes rebooting, you will be directed to the disclaimer page that you saw after starting up PFsense for the first time. The screens that follow will be the exact same and you'll end up in a loop. The reason for this is because this is the PFsense installer. We have finished installing PFsense and configured the installation from the defaults we selected. PFsense needs to start from the hard disk now. 
    
    To do that, while PFsense is still running, click on the `Devices` tab at the top of the VirtualBox ribbon. Then select `Optical Drives` and `Remove disk from virtual drive`.
@@ -117,6 +119,8 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    
    Now that the PFsense installer is out we can go back to VirtualBox and click on our PFsense VM. You will find that you are out of the loop now. Keep note that your default login username is `admin` and your password is `pfsense`.
    
+4. Assign the interfaces.
+
    On the welcome screen, you will see a list of options available. Type in `1` to choose `option 1` to assign the network interfaces we created earlier into PFsense.
    
    ![](option1.png)
