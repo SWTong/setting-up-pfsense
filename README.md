@@ -63,12 +63,6 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
 
    ![](isoFileSuccess.png)
 
-   Congrats! You finished installing PFsense into VirtualBox! Next, we will cover configuration.
-
-   ![](installSuccess.png) 
-
-## Configuring PFsense <a id="configuration"></a>
-
 1. Associate the network adapters you [created from VirtualBox](https://goo.gl/vs4cHC) to PFsense.
 
    Go to PFsense `Settings` and select the `Network` tab.  For Adapter 1 tab, from the `Attached to` dropdown menu, set it to `Host-only adapter` and associate it with the LAN. Remember, if you are using VirtualBox in Windows, we are associating it with Network Card/Adapter 2. On Mac, we are associating it with Network Card/Adapter 0.
@@ -111,21 +105,26 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    
 3. Take out the PFsense ISO image from the optical disk to avoid going through a loop.
    
-   After PFsense finishes rebooting, you will be directed to the disclaimer page that you saw after starting up PFsense for the first time. The screens that follow will be the exact same and you'll end up in a loop. The reason for this is because this is the PFsense installer. We have finished installing PFsense and configured the installation from the defaults we selected. PFsense needs to start from the hard disk now. 
+   After PFsense finishes rebooting, you will be directed to the disclaimer page that you saw after starting up PFsense for the first time. The screens that follow will be the exact same and you'll end up in a loop. The reason for this is because this is the PFsense installer. We have finished installing PFsense and configured the installation from the defaults we selected. This is similar to when booting up a new operating system after inserting the CD into your computer's CD tray. Now, we have to take the "CD" out.
    
-   To do that, while PFsense is still running, click on the `Devices` tab at the top of the VirtualBox ribbon. Then select `Optical Drives` and `Remove disk from virtual drive`.
+   PFsense needs to start from the hard disk. To do that, while PFsense is still running, click on the `Devices` tab at the top of the VirtualBox ribbon. Then select `Optical Drives` and `Remove disk from virtual drive`.
    
    ![](devicesTab.PNG)
    
-   Now that the PFsense installer is out we can go back to VirtualBox and click on our PFsense VM. You will find that you are out of the loop now. Keep note that your default login username is `admin` and your password is `pfsense`.
+   Congrats! You finished installing PFsense into VirtualBox! Next, we will cover configuration.
+   
+## Configuring PFsense <a id="configuration"></a>
+
+   
+   Now that the PFsense installer is out, we can go back to VirtualBox and click on our PFsense VM. You will find that you are out of the loop now. Take note that your default login username is `admin` and your password is `pfsense`.
    
 4. Assign the interfaces.
 
-   On the welcome screen, you will see a list of options available. Type in `1` to choose `option 1` to assign the network interfaces we created earlier into PFsense.
+   On the welcome screen, you will see a list of options available. Type in `1` to choose `option 1`. We are assigning the network interfaces we created earlier into PFsense.
    
    ![](option1.png)
    
-  A list of network interfaces will be shown: em0, em1, em2, and em3. These refer to the network adapters listed on the PFsense `Network` tab: Adapter 1, Adapter 2, and Adapter 3.
+  A list of network interfaces will be shown: em0, em1, em2, and em3. These refer to the network adapters listed on the PFsense `Network` tab: Adapter 1, Adapter 2, and Adapter 3 respectively.
   
   ![](lanEm0.png)
    
@@ -137,13 +136,23 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    
    The third interface PFsense asks you to assign is an optional interface. Here, we have the DMZ that we setup earlier. We associated the DMZ with Netword Card/Adapter 2 (1 on Mac) under the PFsense Adapter 2 tab in VirtualBox. This tab basically refers to em1, so type `em1` and hit `Enter` to answer the question.
    
-   The fourth interface PFsense asks you to assign is another optional interface. We don't have another on here, so just hit `Enter` to move on.
+   The fourth interface PFsense asks you to assign is another optional interface. We don't have another one here, so just hit `Enter` to move on.
    
    Check the image below to be sure you have the following commands typed.
    
    ![](enterInterfaces.PNG)
 
+5. Set the interfaces' IP addresses
+
+   When you return to the welcome screen, enter `2` to select option 2. Here, we will be setting the IP addresses of the interfaces we assigned within PFsense. You can set the IP address for whichever one you want to do first. The order doesn't matter. Let's start with the WAN.
+
+   ![](option2.PNG)
    
+   When the screen asks for the IP address for the WAN, type `172.31.1.2` and hit `Enter`.
+   
+   Make sure the following commands you type are the same as shown in the image below:
+   
+   ![](WANConfigure.PNG)
 ## Troubleshooting <a id="troubleshooting"></a>
 
 ##### Supporting detail (optional/ title name can change also)
