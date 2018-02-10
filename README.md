@@ -75,7 +75,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    
    For Adapter 3 tab, from the `Attached to` dropdown menu, select `Host-only adapter` and associate it with the WAN. In Windows VirtualBox, it is Network Card/Adapter 4. On Mac it is Netword Card/Adapter 2.
    
-   ![](associateAdapter3.png)
+   ![](associateAdapter3.PNG)
    
 2. Now boot up PFsense by double-clicking on it from your VirtualBox homepage.
 
