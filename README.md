@@ -152,13 +152,13 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    
    Make sure the following commands you type are the same as shown in the image below:
    
-   ![](WANConfigure.PNG)
+   ![](wanConfigure.PNG)
    
-   Next, we will configure the LAN. When the screen asks for the IP address for the LAN, type `172.20.241.254`. When it asks for DHCP, type `n`. Make sure the rest of your commands are as follows:
+   Next, we will configure the LAN. When the screen asks for the IP address for the LAN, type `172.20.241.254`. Type `24` for its IPv4 submask. When it asks for DHCP, type `n`. Make sure the rest of your commands are as follows:
    
    ![](lanConfigure.PNG)
    
-   Next, we will configure the DMZ. Type `172.20.240.254` for its IP address. Type `24` for its IPv4 submask. Then Type `n` for DHCP. Make sure the rest of your commands are as follows:
+   Next, we will configure the DMZ. Type `172.20.240.254` for its IP address. Then Type `n` for DHCP. Make sure the rest of your commands are as follows:
    
    ![](dmzConfigure.PNG)
    
