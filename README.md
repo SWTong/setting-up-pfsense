@@ -144,16 +144,30 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
 
 5. Set the interfaces' IP addresses
 
-   When you return to the welcome screen, enter `2` to select option 2. Here, we will be setting the IP addresses of the interfaces we assigned within PFsense. You can set the IP address for whichever one you want to do first. The order doesn't matter. Let's start with the WAN.
+   When you return to the welcome screen, enter `2` to select option 2. Here, we will be setting the IP addresses of the interfaces we assigned within PFsense. You can set the IP address for whichever one you want to do first. The order doesn't matter. Let's start with the WAN. Type `1` to select WAN.
 
    ![](option2.PNG)
    
-   When the screen asks for the IP address for the WAN, type `172.31.1.2` and hit `Enter`.
+   When the screen asks for the IP address for the WAN, type `172.31.1.2`. When it asks for DHCP, type `n`.
    
    Make sure the following commands you type are the same as shown in the image below:
    
    ![](WANConfigure.PNG)
+   
+   Next, we will configure the LAN. When the screen asks for the IP address for the LAN, type `172.20.241.254`. When it asks for DHCP, type `n`. Make sure the rest of your commands are as follows:
+   
+   ![](lanConfigure.PNG)
+   
+   Next, we will configure the DMZ. Type `172.20.240.254` for its IP address. Type `24` for its IPv4 submask. Then Type `n` for DHCP. Make sure the rest of your commands are as follows:
+   
+   ![](dmzConfigure.PNG)
+   
+   Congrats! You have configured the PFsense VM! (on the command line)
+   
+   ![](aftermath.PNG)
+   
+   Next, we will finish the PFsense configuration on the Windows 10 user interface. Reason being, the rest of the configuration steps will be much more difficult to do on the command line. Logout by typing in `0` and move onto the Windows 10 setup guide (coming soon). 
+   
 ## Troubleshooting <a id="troubleshooting"></a>
 
-##### Supporting detail (optional/ title name can change also)
-group together logical ideas for the summary if needed
+Make sure to have the network cards/adapters associated correctly. Same with em0, em1, and em2. Write down on paper if needed which network card/adapter goes under which PFsense adapter tab. If you make a mistake, use CTRL+C on the command line to redo a step. You might have to use your login info to perform actions. Remember that your default login username is `admin` and your password is `pfsense`.
