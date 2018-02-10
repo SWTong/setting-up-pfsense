@@ -118,7 +118,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    
    Now that the PFsense installer is out, we can go back to VirtualBox and click on our PFsense VM. You will find that you are out of the loop now. Take note that your default login username is `admin` and your password is `pfsense`.
    
-4. Assign the interfaces.
+1. Assign the interfaces.
 
    On the welcome screen, you will see a list of options available. Type in `1` to choose `option 1`. We are assigning the network interfaces we created earlier into PFsense.
    
@@ -142,7 +142,7 @@ PFsense is an open source firewall that is based on the FreeBSD operating system
    
    ![](enterInterfaces.PNG)
 
-5. Set the interfaces' IP addresses
+2. Set the interfaces' IP addresses
 
    When you return to the welcome screen, enter `2` to select option 2. Here, we will be setting the IP addresses of the interfaces we assigned within PFsense. You can set the IP address for whichever one you want to do first. The order doesn't matter. Let's start with the WAN. Type `1` to select WAN.
 
