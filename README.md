@@ -118,7 +118,7 @@ pfSense is an open source firewall that is based on the FreeBSD operating system
    
    Now that the pfSense installer is out, we can go back to VirtualBox and click on our pfSense VM. You will find that you are out of the loop now. Take note that your default login username is `admin` and your password is `pfsense`.
    
-1. Assign the interfaces.
+1.	Assign the interfaces.
 
    On the welcome screen, you will see a list of options available. Type in `1` to choose `option 1`. We are assigning the network interfaces we created earlier into pfSense.
    
@@ -146,26 +146,25 @@ NOTE: VLANs stand for Virtual Local Area Networks. They allow 1 network card to 
 
 2. 	Set the interfaces' IP addresses
 
-   When you return to the welcome screen, enter `2` to select option 2. Here, we will be setting the IP addresses of the interfaces we assigned within pfSense. You can set the IP address for whichever one you want to do first. The order doesn't matter. Let's start with the WAN. Type `1` to select WAN.
+	When you return to the welcome screen, enter `2` to select option 2. Here, we will be setting the IP addresses of the interfaces we assigned within pfSense. You can set the IP address for whichever one you want to do first. The order doesn't matter. Let's start with the WAN. Type `1` to select WAN.
 
-   ![](option2.PNG)
-   
-   When the screen asks for the IP address for the WAN, type `172.31.1.2`. When it asks for DHCP, type `n`.
-   
-   Make sure the following commands you type are the same as shown in the image below:
-   
-   ![](wanConfigure.PNG)
-   
-   Next, we will configure the LAN. When the screen asks for the IP address for the LAN, type `172.20.241.254`. Type `24` for its IPv4 submask. When it asks for DHCP, type `n`. Make sure the rest of your commands are as follows:
-   
-   ![](lanConfigure.PNG)
-
-   
-   You should end up with the LAN and WAN like the image below. If so, congrats! You have configured the pfSense VM! (on the command line)
-   
-   ![](pfsenseIPs.PNG)
-   
-   Next, we will finish the pfSense configuration on the Windows 10 user interface. Reason being, the rest of the configuration steps will be much more difficult to do on the command line. Make sure to keep pfSense running (or some of the following steps won't work) and we will move onto configuring Windows 10.
+	![](option2.PNG)
+	
+	When the screen asks for the IP address for the WAN, type `172.31.1.2`. When it asks for DHCP, type `n`.
+	
+	Make sure the following commands you type are the same as shown in the image below:
+	
+	![](wanConfigure.PNG)
+	
+	Next, we will configure the LAN. When the screen asks for the IP address for the LAN, type `172.20.241.254`. Type `24` for its IPv4 submask. When it asks for DHCP, type `n`. Make sure the rest of your commands are as follows:
+	
+	![](lanConfigure.PNG)
+	
+	You should end up with the LAN and WAN like the image below. If so, congrats! You have configured the pfSense VM! (on the command line)
+	
+	![](pfsenseIPs.PNG)
+	
+	Next, we will finish the pfSense configuration on the Windows 10 user interface. Reason being, the rest of the configuration steps will be much more difficult to do on the command line. Make sure to keep pfSense running (or some of the following steps won't work) and we will move onto configuring Windows 10.
 
 ## Setting Up and Configuring Windows 10 <a id="windows10"></a>
 
