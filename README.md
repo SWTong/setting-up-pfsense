@@ -9,8 +9,8 @@
 2. [Summary](#summary)
 3. [Installing pfSense](#installation)
 4. [Configuring pfSense](#configuration)
-5.	[Setting Up and Configuring Windows 10](#setting up  and configuring windows 10)
-5. [Troubleshooting](#troubleshooting)
+5. [Setting Up and Configuring Windows 10](#windows10)
+6. [Troubleshooting](#troubleshooting)
 
 ## Prerequisites <a id="prereq"></a>
 1. Have your [virtual environment](https://www.virtualbox.org/wiki/Downloads) configured.
@@ -18,7 +18,7 @@
 3. Have your ISP gateway running (we'll be using [Ubuntu ISP](https://silexone.github.io/guides/nestor/ISPsetup.html) here).
 
 ## Summary <a id="summary"></a>
-pfSense is an open source firewall that is based on the FreeBSD operating system. Here, we will learn how to install and setup pfSense in a virtualization software, in this case, VirtualBox.
+pfSense is an open source firewall that is based on the FreeBSD operating system. Here, we will learn how to install and configure pfSense in a virtualization software, in this case, VirtualBox. We will also learn how to configure pfSense interfaces such as WAN and DMZ and firewall rules on a graphic user interface, in this case, Windows 10. We will then prepare to setup the DMZ interface to continue the goal of establishing a [virtual training network](https://silexone.github.io/).
 
 ## Installing pfSense <a id="installation"></a>
 1. Go to the pfSense download page [here](https://www.pfsense.org/download/).
@@ -144,7 +144,7 @@ NOTE: VLANs stand for Virtual Local Area Networks. They allow 1 network card to 
    
    ![](enterInterfaces.PNG)
 
-2. Set the interfaces' IP addresses
+2. 	Set the interfaces' IP addresses
 
    When you return to the welcome screen, enter `2` to select option 2. Here, we will be setting the IP addresses of the interfaces we assigned within pfSense. You can set the IP address for whichever one you want to do first. The order doesn't matter. Let's start with the WAN. Type `1` to select WAN.
 
@@ -167,9 +167,9 @@ NOTE: VLANs stand for Virtual Local Area Networks. They allow 1 network card to 
    
    Next, we will finish the pfSense configuration on the Windows 10 user interface. Reason being, the rest of the configuration steps will be much more difficult to do on the command line. Make sure to keep pfSense running (or some of the following steps won't work) and we will move onto configuring Windows 10.
 
-## Setting Up and Configuring Windows 10 <a id="setting up and configuring windows 10"></a>
+## Setting Up and Configuring Windows 10 <a id="windows10"></a>
 
-1.	Download Windows 10 from this [link](https://www.microsoft.com/en-us/evalcenter/)
+1.	Download Windows 10 from this [link](https://www.microsoft.com/en-us/evalcenter/).
 
 2.	On VirtualBox, go to Windows 10 VM Settings and change the Network to `Host-Only` Network Card 2, which is our LAN.
 
@@ -215,7 +215,7 @@ Now apply the DMZ setting changes by clicking `Apply Changes`.
 
 ![](applyChanges.PNG)
 
-Next, we are going to configure our WAN settings. Go back to the `Interfaces` tab and select `WAN`. 
+7.	Next, we are going to configure our WAN settings. Go back to the `Interfaces` tab and select `WAN`. 
 
 ![](interfacesWAN.PNG)
 
@@ -223,7 +223,7 @@ We are just going to `Deselect` all the `Reserved Networks` options. Then click 
 
 ![](reservedNetworksDeselect.PNG)
 
-Now we are going to setup our firewall rules. Go to the `Firewall` tab and select `Rules`.
+8.	Now we are going to setup our firewall rules. Go to the `Firewall` tab and select `Rules`.
 
 
 ![](firewallRules.PNG)
@@ -240,11 +240,11 @@ Go back to the `Firewall` tab and click on `Rules`. Go to `LAN`. Then set `Actio
 
 We have finished setting up firewall rules. We will now finish the Windows 10 setup by making Windows 10 be the WAN.
 
-Set the Windows 10 Network to Host-Only WAN by going to the Windows 10 VM settings and clicking on `Network`. Then under the Adapter 1 tab, change `Attached to` to `Host-Only` and the `Name` to the one with `Adapter #4` (2 on Mac), our WAN adapter. 
+9.	Set the Windows 10 Network to Host-Only WAN by going to the Windows 10 VM settings and clicking on `Network`. Then under the Adapter 1 tab, change `Attached to` to `Host-Only` and the `Name` to the one with `Adapter #4` (2 on Mac), our WAN adapter. 
 
 ![](windows10WAN.PNG)
 
-Finally, on the Windows 10 desktop, go back to the Windows IPv4 Properties from the Network Sharing Center. Use the following addresses:
+10.	Finally, on the Windows 10 desktop, go back to the Windows IPv4 Properties from the Network Sharing Center. Use the following addresses:
 
 
 ![](changeWindowsIP.PNG)
