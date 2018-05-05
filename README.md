@@ -257,7 +257,7 @@ Finally, on the Windows 10 desktop, go back to the Windows IPv4 Properties from 
 So far, this is our current network setup.
 
 
-![](currentSetup.PNG)
+![](currentSetup.png)
 
 We are missing the DMZ interface. In the next guide (coming soon), we will setup DMZ Ubuntu.
 
