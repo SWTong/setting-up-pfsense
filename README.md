@@ -14,7 +14,7 @@ author: Sharon Tong
 2. [Summary](#summary)
 3. [Installing pfSense](#installation)
 4. [Configuring pfSense](#configuration)
-5. [Setting Up and Configuring Windows 10](#setting up  and configuring windows 10)
+5.	[Setting Up and Configuring Windows 10](#setting up  and configuring windows 10)
 5. [Troubleshooting](#troubleshooting)
 
 ## Prerequisites <a id="prereq"></a>
@@ -233,21 +233,33 @@ Now we are going to setup our firewall rules. Go to the `Firewall` tab and selec
 
 ![](firewallRules.PNG)
 
-We are going to allow WAN access by letting `Action` be  set to`Pass` and `Interface` be set to `WAN`. Change `Protocol` to be set to `Any` and `Source`, `Single host or alias`. Type in the address `172.31.1.3`. Save and apply these changes.
+We are going to allow WAN access by letting `Action` be  set to `Pass` and `Interface` be set to `WAN`. By default, the pfSense firewall blocks all WAN access. Change `Protocol` to be set to `Any` and `Source` to `Single host or alias`. Type in the address `172.31.1.3` for the source. Save and apply these changes.
 
 ![](firewallRule1.PNG)
 
-Our next firewall rule will be 
+Our next firewall rule will be to allow DMZ access.
+
+Go back to the `Firewall` tab and click on `Rules`. Go to `LAN`. Then set `Action` to `Pass`, `Interface` to `DMZ`, `Protocol` to `Any`, `Source` to `Any`, and `Destination` to `Any`. Save and apply these changes.
 
 ![](firewallRule2.PNG)
 
+We have finished setting up firewall rules. We will now finish the Windows 10 setup by making Windows 10 be the WAN.
+
+Set the Windows 10 Network to Host-Only WAN by going to the Windows 10 VM settings and clicking on `Network`. Then under the Adapter 1 tab, change `Attached to` to `Host-Only` and the `Name` to the one with `Adapter #4` (2 on Mac), our WAN adapter. 
 
 ![](windows10WAN.PNG)
 
+Finally, on the Windows 10 desktop, go back to the Windows IPv4 Properties from the Network Sharing Center. Use the following addresses:
 
-![](changedWindowsIP.PNG)
+
+![](changeWindowsIP.PNG)
+
+So far, this is our current network setup.
 
 
+![](currentSetup.PNG)
+
+We are missing the DMZ interface. In the next guide (coming soon), we will setup DMZ Ubuntu.
 
 ## Troubleshooting <a id="troubleshooting"></a>
 
