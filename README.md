@@ -14,7 +14,7 @@ author: Sharon Tong
 2. [Summary](#summary)
 3. [Installing pfSense](#installation)
 4. [Configuring pfSense](#configuration)
-5. [Setting Up and Configuring Windows 10](#setting up and configuring windows 10)
+5. [Setting Up and Configuring Windows 10](#setting up  and configuring windows 10)
 5. [Troubleshooting](#troubleshooting)
 
 ## Prerequisites <a id="prereq"></a>
@@ -233,9 +233,11 @@ Now we are going to setup our firewall rules. Go to the `Firewall` tab and selec
 
 ![](firewallRules.PNG)
 
+We are going to allow WAN access by letting `Action` be  set to`Pass` and `Interface` be set to `WAN`. Change `Protocol` to be set to `Any` and `Source`, `Single host or alias`. Type in the address `172.31.1.3`. Save and apply these changes.
 
 ![](firewallRule1.PNG)
 
+Our next firewall rule will be 
 
 ![](firewallRule2.PNG)
 
