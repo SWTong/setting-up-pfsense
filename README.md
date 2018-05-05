@@ -134,14 +134,12 @@ pfSense is an open source firewall that is based on the FreeBSD operating system
    When the screen asks, `Do VLANs need to be set up first?`, type `n` for 'no' and hit `Enter`.
 
 NOTE: VLANs stand for Virtual Local Area Networks. They allow 1 network card to serve multiple subnets, which in our context, means to connect both a LAN and a WAN to a router. We already created our 3 network cards early on for our LAN, WAN, and DMZ, so that's why we don't need them here.
+
+   Assign the following when prompted:
    
-   The first interface pfSense asks you to assign is the WAN. In previous steps we associated the WAN with Network Card 4 (2 on Mac). This tab basically refers to em2, so type `em2` and hit `Enter` to answer the question.
-      
-   The second interface pfSense asks you to assign is the LAN. In previous steps we associated the LAN with Network Card 2  (0 on Mac). This tab basically refers to em0, so type `em0` and hit `Enter` to answer the question.
-   
-   The third interface pfSense asks you to assign is an optional interface. Here, we have the DMZ that we setup earlier. We associated the DMZ with Netword Card 3 (1 on Mac). This tab basically refers to em1, so type `em1` and hit `Enter` to answer the question.
-   
-   The fourth interface pfSense asks you to assign is another optional interface. We don't have another one here, so just hit `Enter` to move on.
+   		WAN = em2
+		LAN = em0
+		DMZ = em1
    
    Check the image below to be sure you have the following commands typed.
    
