@@ -1,8 +1,3 @@
----
-layout: post
-title: Setting up pfSense in VirtualBox
-author: Sharon Tong
----
 ## Written by Sharon Tong
 
 ### Contact
