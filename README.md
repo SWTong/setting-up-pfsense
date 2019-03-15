@@ -1,6 +1,6 @@
 ### Contact
 - Slack: @Sharon on wcscusf.slack.com
-- [LinkedIn](linkedin.com/in/sharon-tong)
+- [LinkedIn](https://www.linkedin.com/in/sharon-tong/)
 - Email: sharont1@mail.usf.edu
 ### Table of Contents
 1. [Prerequisites](#prereq)
